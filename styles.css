@@ -1,0 +1,171 @@
+/* Input Style ================================================================================== */
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: clamp(400px, 100vw, 9900px);
+    padding: 5px;
+    background-color: #007BFF;
+    color: azure;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+#mainSection{
+    margin: auto;
+    width: clamp(400px, 60vw, 800px);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+#mainSection h2{
+    text-align: start;
+}
+
+.adding{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.input-container {
+    width: 100%;
+    position: relative;
+    margin: 20px;
+    display: flex;
+}
+
+.input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #000; /* Underline */
+    outline: none;
+    font-size: 16px;
+    padding: 10px 0;
+    transition: 0.6s;
+}
+
+.subheading {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-size: 14px;
+    color: #555; /* Initial color */
+    transition: color 0.3s ease;
+}
+
+.input:focus {
+    border-color: #007BFF; /* Change color when input is focused */
+}
+
+.subheading.focused {
+    color: #007BFF; /* Change color when input is focused */
+}
+
+.addButton {
+    background-color: #007BFF; /* Primary color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.addButton:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.02); /* Slightly enlarge the button on hover */
+}
+
+
+.calContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* Meal section ------------------------------------------------------------------------------------------------------ */
+
+#mealSection{
+    margin: auto;
+    margin-top: 50px;
+    width: clamp(400px, 60vw, 800px);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.meal{
+    width: 80%;
+    height: 60px;
+    background-color: #e22d2d;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.exercise{
+    width: 80%;
+    height: 60px;
+    background-color: #3fdd0f;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.delete-btn, .save-btn, .edit-btn{
+    width: 15%;
+    height: 30px;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.delete-btn:hover, .save-btn:hover, .edit-btn:hover{
+    background-color: rgba(240, 248, 255, 0.712);
+    cursor: pointer;
+}
+
+.edit-name-input, .edit-cal-input{
+    width: 20%;
+    height: 30px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.name, .calories{
+    color: aliceblue;
+}
+
+
